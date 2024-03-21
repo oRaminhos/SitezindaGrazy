@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/noite3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .navbar {
+    background-color: #181b70dc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+ }
+
+ .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+ }
+
+ .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+
+ .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 00;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    
+ }
+
+ .menu li {
+    margin-right: 20px;
+ }
+
+ .menu li:last-child {
+    margin-right: 0;
+ }
+
+ .menu li a {
+    color: white;
+    text-decoration: none;
+ }
+
+ .menu li a:hover {
+    text-decoration: underline;
+ }
+
+ /* Mostrar o menu quando a classe 'menu-open' é adicionada ao menu */
+ .menu.menu-open {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+ }
+
+ .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+ .column {
+    width: 48%; /* Ajuste para deixar uma margem entre as colunas */
+ }
+
+ .column.left {
+    order: 1; /* Muda a ordem para a coluna da esquerda */
+  }
+
+ .column.right {
+    order: 2; /* Muda a ordem para a coluna da direita */
+ }
+
+ .column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+ }
+ .content {
+    display: flex;
+  }
+  
+  .one-third {
+    flex: 1;
+    text-align: center; /* Centraliza a imagem horizontalmente */
+    padding: 20px;
+  }
+  
+  .two-thirds {
+    flex: 2;
+    padding: 50px;
+    font-size:50px;
+  }
+  
+  img {
+    width: 55px;
+    height: auto;
+  }
+  
+  p {
+    font-size: 40px;
+    line-height: 1.6;
+    color: white;
+  }
+  .text-box {
+    background-color: rgba(0, 0, 0, 0.781); /* Cor do fundo da caixa de texto com transparência */
+    padding: 20px;
+    border-radius: 10px; /* Cantos arredondados para a caixa de texto */
+  }
+  .content {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Ocupa 100% da altura da tela */
+  }
+  
+  .photo-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Cor do fundo da seção de fotos com transparência */
+    padding: 30px;
+    border-radius: 10px; /* Cantos arredondados para a seção de fotos */
+    text-align: center; /* Centraliza o texto */
+    max-width: 600px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+  }
+  .poemas{
+    background-color: rgba(0, 0, 0, 0.7); /* Cor do fundo da seção de fotos com transparência */
+    padding: 10px;
+    border-radius: 10px; /* Cantos arredondados para a seção de fotos */
+    text-align: center; /* Centraliza o texto */
+    max-width: 1000px; /* Largura máxima da seção */
+    max-height: 900px;
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    font-size: 11px;
+  }
+  .comida{
+    background-color: rgba(0, 0, 0, 0.7); /* Cor do fundo da seção de fotos com transparência */
+    padding: 10px;
+    border-radius: 10px; /* Cantos arredondados para a seção de fotos */
+    text-align: center; /* Centraliza o texto */
+    max-width: 600px; /* Largura máxima da seção */
+    max-height: 1000px;
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    font-size: 1px;
+  }
+  .section-title h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .photos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as fotos quebrem para uma nova linha */
+    justify-content: center; /* Centraliza as fotos horizontalmente */
+    gap: 20px; /* Espaçamento entre as fotos */
+  }
+  
+  .photos img {
+    width: calc(33.33% - 20px); /* Define a largura de cada foto com margens */
+    max-width: 300px; /* Largura máxima das imagens */
+    height: auto;
+    border-radius: 8px; /* Cantos arredondados para as fotos */
+  }
+  
+  /* Aumenta o background para cada linha */
+  .photos:nth-child(3n+1) {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .photos:nth-child(3n+2) {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .photos:nth-child(3n+3) {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+ @media screen and (max-width: 992px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens verticalmente */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu li:last-child {
+        margin-bottom: 0; /* Remove a margem inferior do último item */
+    }
+
+    /* Adicionar margem superior para acomodar a navbar */
+    .content {
+        margin-top: 60px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Mostrar ícone do menu quando o menu está aberto */
+    .menu-open .menu-toggle::after {
+        content: "\2715"; /* × (multiplicação) */
+    } 
+    
+ }
+
+
+
